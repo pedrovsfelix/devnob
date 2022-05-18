@@ -1,0 +1,178 @@
+.home {
+    margin-top: 6rem;
+}
+
+.home .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    gap: 1.5rem;
+}
+
+.home .row .content {
+    flex:1 1 40rem;
+    text-align: center;
+}
+
+.home .row .image {
+    flex:1 1 40rem;
+}
+
+.home .row .image img {
+    padding-top: 5rem;
+    width: 100%;
+}
+
+.home .row .content h3 {
+    margin-bottom: 1rem;
+    font-size: 10rem;
+    color: var(--white);
+    line-height: 1;
+}
+
+.home .row .content h3 span{
+    color: var(--light-red);
+}
+
+
+/*Fim estilização home*/
+
+/*Início estilização informações do curso*/
+
+.course .box-course {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.course .box-course .box {
+    background-color: var(--light-bg);
+    border: solid 1px #fdfdfd;
+    border-radius: .5rem;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+.course .box-course .box i{
+    font-size: 5rem;
+    color: var(--light-red);
+}
+
+.course .box-course .box .content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.course .box-course .box .content h3 {
+    font-size: 2rem;
+    color: var(--white);
+    margin-bottom: .5rem;
+}
+
+.course .box-course .box .content p {
+    font-size: 1.6rem;
+    color: var(--light-white);
+}
+
+/**/
+
+/*Início estilização dos cursos*/
+
+.courses .box-courses{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.courses .box-courses .boxs {
+    background-color: var(--light-bg);
+    border: solid 1px #fdfdfd;
+    border-radius: .5rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+.courses .box-courses .boxs i {
+    font-size: 5rem;
+    color: var(--light-red);
+}
+
+.courses .box-courses .boxs h3 {
+    font-size: 2rem;
+    color: var(--white);
+}
+
+.courses .box-courses .boxs p {
+    font-size: 1.6rem;
+    color: var(--white);
+    text-align: center;
+}
+
+/*Início contato*/
+
+.contact .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.contact .row .image {
+    flex: 1 1 40rem;
+}
+
+.contact .row .image img {
+    max-width: 100%;
+}
+
+.contact .row form {
+    flex: 1 1 40rem;
+}
+
+.contact .row form .box {
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    border-radius:.5rem;
+    background-color:var(--light-bg);
+    font-size: 1.8rem;
+    color: var(--white);
+    padding: 1.4rem;
+}
+
+.contact .row form span {
+    font-size: 1.6rem;
+    color: var(--light-white);
+}
+
+/*Fim contato*/
+
+/*Media queries*/
+
+@media (max-width:991px) {
+    .home .row .content h3 {
+        font-size: 8rem;
+    }
+}
+
+@media (max-width:768px) {
+    .home .row .content h3 {
+        font-size: 5rem;
+    }
+}
+
+@media (max-width:480px) {
+    .home .row .content h3 {
+        font-size: 8rem;
+    }
+}

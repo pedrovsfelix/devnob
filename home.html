@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./Assets/css/reset.css" />
+    <link rel="stylesheet" href="./Assets/css/header.css" />
+    <link rel="stylesheet" href="./Assets/css/footer.css" />
+    <link rel="stylesheet" href="./Assets/css/home.css" />
+  </head>
+  <body>
+    <header class="header">
+      <section class="flex">
+        <a href="#home"><img src="./Assets/img/logo.png" alt="Logo DevNoob" class="logo" /></a>
+
+        <nav class="navbar">
+          <a href="#home">Home</a>
+          <a href="#courses">Cursos</a>
+          <a href="#contact">Contato</a>
+        </nav>
+
+        <div id="menu-btn" class="fas fa-bars"></div>
+      </section>
+    </header>
+
+    <main>
+      <section class="home" id="home">
+        <div class="row">
+          <div class="content">
+            <h3>Cursos <span>Front-End</span></h3>
+            <a href="#contact" class="btn">Contato</a>
+          </div>
+
+          <div class="image">
+            <img src="./Assets/img/contenthome.jpg" alt="Cursos DevNoob" />
+          </div>
+        </div>
+      </section>
+
+      <section class="course">
+        <div class="box-course">
+          <div class="box">
+            <i class="fas fa-graduation-cap"></i>
+            <div class="content">
+              <h3>4</h3>
+              <p>Cursos</p>
+            </div>
+          </div>
+
+          <div class="box">
+            <i class="fas fa-user-graduate"></i>
+            <div class="content">
+              <h3>40</h3>
+              <p>Estudantes</p>
+            </div>
+          </div>
+
+          <div class="box">
+            <i class="fas fa-chalkboard-user"></i>
+            <div class="content">
+              <h3>1</h3>
+              <p>Professor</p>
+            </div>
+          </div>
+
+          <div class="box">
+            <i class="fas fa-face-smile"></i>
+            <div class="content">
+              <h3>100%</h3>
+              <p>Satisfação</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="courses" id="courses">
+        <h2 class="heading">Nossos <span>Cursos</span></h2>
+        <div class="box-courses">
+          <div class="boxs">
+            <i class="fa-brands fa-html5"></i>
+            <h3>HTML5</h3>
+            <p>
+              Neste módulo você irá aprender sobre a linguagem de marcação de
+              hipertexto. Este módulo fornece uma base de conhecimento,
+              permitindo que você acostume-se com os conceitos e sintaxes
+              importantes, tais como aplicar HTML para texto, como criar
+              hyperlinks e como usar HTML para estruturar uma página web.
+            </p>
+          </div>
+
+          <div class="boxs">
+            <i class="fa-brands fa-css3-alt"></i>
+            <h3>CSS3</h3>
+            <p>
+              Neste módulo você irá aprender sobre a folha de estilização. Ela
+              define formatos e padrões estéticos dentro de uma página da web em
+              um arquivo de códigos separado do HTML e/ou do JavaScript, facilitando a implementação destas
+              modificações e trazendo mais facilidade ao trabalho do desenvolvedor.
+            </p>
+          </div>
+
+          <div class="boxs">
+            <i class="fa-brands fa-js-square"></i>
+            <h3>JavaScript</h3>
+            <p>
+              Neste módulo você irá aprender sobre a linguagem de programação interpretada estruturada. O JavaScript permite páginas da Web interativas e, portanto, é uma parte essencial dos aplicativos da web. A grande maioria dos sites usa, e todos os principais navegadores
+            </p>
+          </div>
+
+          <div class="boxs">
+            <i class="fa-brands fa-php"></i>
+            <h3>PHP</h3>
+            <p>
+              Neste módulo você irá aprender sobre a linguagem interpretada livre, usada originalmente apenas para o desenvolvimento de aplicações presentes e atuantes no lado do servidor, capazes de gerar conteúdo dinâmico.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <h2 class="heading">Entre em <span>contato</span></h2>
+        <div class="row">
+
+          <div class="image">
+            <img src="./Assets/img/contentcontact.jpg" alt="Contato" />
+          </div>
+
+          <form action="" method="post">
+            <span>nome</span>
+            <input
+              type="text"
+              required
+              placeholder="Insira seu nome completo"
+              maxlength="50"
+              name="name"
+              class="box"
+            />
+
+            <span>e-mail</span>
+            <input
+              type="email"
+              required
+              placeholder="Insira seu email"
+              maxlength="50"
+              name="email"
+              class="box"
+            />
+
+            <span>número de telefone</span>
+            <input
+              type="tel"
+              required
+              placeholder="Insira seu número"
+              max="999999999"
+              min="0"
+              name="tel"
+              class="box"
+              onkeypress="if(this.value.length == 9) return false;"
+            />
+
+            <span>Selecione o curso</span>
+            <select name="courses" class="box" required>
+              <option value="" disabled selected>Selecione um curso ---</option>
+              <option value="html">HTML</option>
+              <option value="css">CSS</option>
+              <option value="javascript">JAVASCRIPT</option>
+              <option value="php">PHP</option>
+            </select>
+            <input type="submit" value="Enviar dados" class="btn" />
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <section>
+        <div class="share">
+          <a href="#" class="fab fa-facebook-f"></a>
+          <a href="#" class="fab fa-twitter"></a>
+          <a href="#" class="fab fa-linkedin"></a>
+          <a href="#" class="fab fa-instagram"></a>
+          <a href="#" class="fab fa-youtube"></a>
+        </div>
+
+        <div class="credit">&copy; copyright @ 2022 by <span>Pedro Félix</span> │ all rights reserved!</div>
+      </section>
+    </footer>
+
+    <script src="./Assets/js/script.js"></script>
+  </body>
+</html>
